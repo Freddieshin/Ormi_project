@@ -34,8 +34,7 @@ ul {
    margin-right: 30px;
   }
 button {
-  width: 140px;
-  height: 50px;
+  font-weight: 700;
   background-color: #D97652;
   border-radius: 40px;
   color: white;
@@ -43,6 +42,8 @@ button {
   align-content: center;
 }
 .button1 {
+  width: 140px;
+  height: 50px;
   margin-top: 26px;
   margin-left: 49px;
 }
@@ -59,6 +60,8 @@ button {
     margin-left: 320px;
 }
   .button2 {
+    width: 140px;
+    height: 50px;
     margin-left: 320px;
   }
   .boxcat {
@@ -73,18 +76,17 @@ button {
     margin-right: 110px;
     margin-left: 320px;
   }
+  .maintext{
+    font-size: 36px;
+    margin-top: 172px;
+    margin-bottom: 30px;
+  }
 h2{
+  text-align: center;
   font-size: 36px;
   margin-top: 172px;
   margin-bottom: 40px;
 }
-  h3 {
-    text-align: center;
-    font-size: 48px;
-    color: #D97652;
-    margin-top: 120px;
-    margin-bottom: 40px;
-  }
   .centertext{
     text-align: center;
     margin-bottom: 88px;
@@ -92,19 +94,39 @@ h2{
 .catcontainer1{
   display: flex;
   justify-content: center;
+  gap: 72px;
 }
 .cat1 img{
   border-radius: 30px;
   margin-bottom: 72px;
+
 }
 .catcontainer2 {
   display: flex;
   justify-content: center;
+  gap: 72px;
 }
-.cat2 img{
+.cat2 img {
   border-radius: 30px;
+  margin-bottom: 100px;
 }
-h4 {
+  .container3{
+    text-align: center;
+  }
+.hodutext{
+  font-size: 24px;
+}
+.button3 {
+  width: 140px;
+  height: 50px;
+  margin-top: 28px;
+  margin-bottom: 80px;
+}
+hr{
+  width: 1278px;
+  background-color: #c4c4c4;
+}
+.maptext {
   font-size: 36px;
   font-weight: bold;
   margin-left: 320px;
@@ -113,8 +135,65 @@ h4 {
     margin-left: 320px
 }
 #map{
-margin: auto;
    border-radius: 12px;
+  margin-left: 320px;
+}
+  .subscribe {
+    background-color: #263140;
+    width: 1280px;
+    height: 200px;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 320px;
+    z-index: 3;
+
+}
+  .subtextcontainer{
+    display: inline-block;
+    padding-left: 58px;
+  }
+  .subtext {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .lorentext {
+    color: #F2E9D8;
+    font-size: 14px;
+  }
+  .emailcontainer {
+    float: right;
+    align-items: center;
+   display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border-radius: 60px;
+    width: 530px;
+    height: 60px;
+    color: #767676;
+    margin-top: 68px;
+    margin-right: 53px;
+  }
+  .mailicon{
+    margin-left: 28px;
+  }
+  .mailarea{
+    width: 184px;
+    height: 20px;
+    font-size: 16px;
+    padding-right: 30px;
+    padding-left: 18px;
+  }
+.button4{
+  width: 135px;
+  height: 50px;
+  margin-left: 105px;
+}
+.backgroundcat{
+  z-index: 1;
 }
 </style>
 <body>
@@ -141,12 +220,11 @@ margin: auto;
   </header>
   <main>
   <img src="main_cat.png" class="maincat" alt="누워있는냥이" width="660" height="390">
-  <h2>Lorem Ipsum is simply <br> dummy text of the printing <br> and dummy text</h2>
-  <p class="maintext">Lorem ipsum simply dummy text of the printing and typesetting <br> industry.</p>
-    <h3>dummy text of the printing and dummy</h3>
+  <p class="maintext"><strong>Lorem Ipsum is simply <br> dummy text of the printing <br> and dummy text</strong></p>
+  <p>Lorem ipsum simply dummy text of the printing and typesetting <br> industry.</p>
+    <h2><strong style="color: #D97652">dummy text of the printing and dummy</strong></h2>
     <p class="centertext">Lorem ipsum simply <strong style="color: #D97652">dummy text</strong> of the printing and typesetting industry. <br>
     Lorem Ipsum has been the industry's standard dummy textever since the 1500s, when an unknown</p>
-
     <div class="catcontainer1">
     <div class="cat1"><img class=catimg1 src="subcat1.png" alt="메인고양이1"></div>
       <div class="cat1"><img src="subcat2.png" alt="메인고양이2"></div>
@@ -157,23 +235,46 @@ margin: auto;
         <div class="cat2"><img class=catimg2 src="subcat5.png" alt="메인고양이5"></div>
           <div class="cat2"><img class=catimg2 src="subcat6.png" alt="메인고양이6"></div>
     </div>
-  </main>
+    <div class="container3">
+    <p class="hodutext"><strong>Continue exploring HODU</strong></p>
+      <button class="button3">Show more</button>
+    </div>
+    <hr>
+<p class="maptext">Where you'll be</p>
+    <p class="adress">78, Digital-ro 10-gil, Geumcheon-gu, Seoul, Republic of Korea</p>
+    <!-- 지도를 표시할 div 입니다 -->
+    <div id="map" style="width:1278px; height:520px;"></div>
 
-<h4>Where you'll be</h4>
-  <p class="adress">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-  <!-- 지도를 표시할 div 입니다 -->
-  <div id="map" style="width:1278px; height:520px;"></div>
-
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8ccd9c3f2c7564d10cde92b8dbd1884a"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8ccd9c3f2c7564d10cde92b8dbd1884a"></script>
   <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div
       mapOption = {
         center: new kakao.maps.LatLng(37.4745063, 126.8897151), // 지도의 중심좌표
         level: 3 // 지도의 확대 레벨
       };
-
     // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
     var map = new kakao.maps.Map(mapContainer, mapOption);
   </script>
+  </main>
+  <section>
+    <div class="subscribe">
+      <div class="subtextcontainer">
+        <p class="subtext">
+          <strong>Subscribe to our Blog post</strong>
+        </p>
+        <p class="lorentext">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+          Lorem Ipsum has been the industry's standard dummy text
+        </p>
+      </div>
+    <div class="emailcontainer">
+      <img class="mailicon" src="mail.png" alt="메일아이콘">
+      <input class="mailarea" type="email" placeholder="Enter your e-mail address"/>
+      <button class="button4">Subscribe</button>
+    </div>
+    </div>
+    <img class="backgroundcat" src="backgroundcat.png" alt="백그라운드냥이">
+  </section>
+
 </body>
 </html>
