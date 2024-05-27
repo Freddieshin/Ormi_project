@@ -209,6 +209,32 @@ hr{
 .logoimg {
   margin-top: 13px;
 }
+.modalbackground{
+  position: relative;
+  z-index: 3;
+}
+.modalcat{
+  margin-top: 60px;
+  z-index: 1;
+}
+.modaltext1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #D97652;
+  margin-top: 24px;
+}
+.modaltext2{
+  text-align: center;
+  font-size: 14px;
+  margin-top: 14px;
+}
+.button5{
+  text-align: center;
+  width: 183px;
+  height: 50px;
+  margin-top: 38px
+}
 </style>
 
 <body>
@@ -292,14 +318,21 @@ hr{
   </section>
 <footer>
   <div class="footercontanier">
-  <img class="footerlogo" src="Logo-fin.png" alt="호두로고">
-    <div class="logoimg">
-  <ul>
-    <li><a href="https://blog.naver.com/"> <img src="blog.png" alt="블로그"></a></li>
-    <li><a href="https://www.instagram.com/"><img src="instagram.png" alt="인스타그램"></a></li>
-    <li><a href="https://www.facebook.com/"><img src="facebook.png" alt="페이스북"></a></li>
-    <li><a href="https://www.youtube.com/"><img src="youtube.png" alt="유튜브"></a></li>
-  </ul>
+  <img class="footerlogo" src="Logo-fin.png">
+  </div>alt="호두로고">
+  <div class="logoimg">
+    <ul>
+      <li><a href="https://blog.naver.com/"> <img src="blog.png" alt="블로그"></a></li>
+      <li><a href="https://www.instagram.com/"><img src="instagram.png" alt="인스타그램"></a></li>
+      <li><a href="https://www.facebook.com/"><img src="facebook.png" alt="페이스북"></a></li>
+      <li><a href="https://www.youtube.com/"><img src="youtube.png" alt="유튜브"></a></li>
+    </ul>
+    <div class="modal">
+      <img class="modalbackground" src="modalbackground.png" alt="모달배경">
+      <img class="modalcat" src="modalcat.png" alt="모달냥이">
+      <p class="modaltext1">Thank you!</p>
+      <p class="modaltext2">Lorem Ipsum is simply dummy text of the printing industry. </p>
+      <button class="button5">OK! I Love HODU</button>
     </div>
   </div>
 </footer>
