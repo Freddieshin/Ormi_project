@@ -26,7 +26,6 @@ function makeImageList(datas){
   });
 }
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8ccd9c3f2c7564d10cde92b8dbd1884a"></script>
-<script>
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div
   mapOption = { }
   center: new kakao.maps.LatLng(37.4745063, 126.8897151), // 지도의 중심좌표
@@ -34,7 +33,6 @@ function makeImageList(datas){
 };
   // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
   var map = new kakao.maps.Map(mapContainer, mapOption);
-</script>
 <!-- 모달구현 -->
 document.querySelector("#openmodal").addEventListener("click", function (){document.querySelector(".modal").style.display = 'flex'})
 document.querySelector("#close").addEventListener("click", function (){document.querySelector(".modal").style.display = 'none'})
