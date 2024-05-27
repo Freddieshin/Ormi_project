@@ -12,6 +12,3 @@ Subscribe 바튼 클릭 시 고양이 모달 렌더링
 
 <h3>*5월28일 프로젝트 발표까지 변경,추가사항에 대해 일단위로 업로드 하겠습니다.</h3>
 <hr>
-<p align="center">
-  <img src="https://github.com/Freddieshin/Ormi_project/assets/168792932/c47c5387-2701-4ea0-b5a0-784e3364105d></img>
-</p>
