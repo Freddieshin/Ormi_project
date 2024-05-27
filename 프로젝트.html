@@ -124,7 +124,7 @@
   }
   .catcontainer3{
     display: flex;
-    justify-content: center;
+  justify-content: center;
     gap: 72px;
   }
   .moreimg{
@@ -134,8 +134,6 @@
     margin-bottom: 80px;
   }
   hr{
-    position: absolute;
-    display: flex;
     width: 1278px;
     height: 1px;
     top: 2916px;
@@ -294,13 +292,14 @@
 
 <!-- 메인 시작  -->
 <main>
+  <section>
   <img src="./img/maincat.png" class="maincat" alt="누워있는냥이" width="660" height="390">
   <p class="maintext"><strong>Lorem Ipsum is simply <br> dummy text of the printing <br> and dummy text</strong></p>
   <p>Lorem ipsum simply dummy text of the printing and typesetting <br> industry.</p>
   <h2><strong style="color: #D97652">dummy text of the printing and dummy</strong></h2>
   <p class="centertext">Lorem ipsum simply <strong style="color: #D97652">dummy text</strong> of the printing and typesetting industry. <br>
     Lorem Ipsum has been the industry's standard dummy textever since the 1500s, when an unknown</p>
-</main>
+  </section>
 <section>
   <div class="catcontainer1">
     <div class="cat1"><img class=catimg1 src="./img/subcat1.png" alt="메인고양이1"></div>
@@ -347,23 +346,22 @@
       });
     }
   </script>
-  <hr/>
+  <hr>
+
     </section>
+</main>
 
   <!-- 카카오맵 api구현 -->
   <p class="maptext">Where you'll be</p>
   <p class="adress">78, Digital-ro 10-gil, Geumcheon-gu, Seoul, Republic of Korea</p>
-  <!-- 지도를 표시할 div 입니다 -->
   <div id="map" style="width:1278px; height:520px;"></div>
-
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8ccd9c3f2c7564d10cde92b8dbd1884a"></script>
   <script>
-    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+    var mapContainer = document.getElementById('map'),
       mapOption = {
-        center: new kakao.maps.LatLng(37.4745063, 126.8897151), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
+        center: new kakao.maps.LatLng(37.4745063, 126.8897151),
+        level: 3
       };
-    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
     var map = new kakao.maps.Map(mapContainer, mapOption);
   </script>
 
