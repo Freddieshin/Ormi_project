@@ -20,14 +20,14 @@ async function fetchImages(page){
   }
 }
 <!-- 카카오맵 api구현 -->
-function makeImageList(datas){
-  datas.forEach((data)=>{
-    listPic.insertAdjacentHTML('beforeend', `<img class="moreimg" src="${data.download_url}" alt="추가고양이">`);
-  });
-}
+<p class="maptext">Where you'll be</p>
+<p class="adress">78, Digital-ro 10-gil, Geumcheon-gu, Seoul, Republic of Korea</p>
+<!-- 지도를 표시할 div 입니다 -->
+<div id="map" style="width:1278px; height:520px;"></div>
+
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8ccd9c3f2c7564d10cde92b8dbd1884a"></script>
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-  mapOption = { }
+  mapOption = {
   center: new kakao.maps.LatLng(37.4745063, 126.8897151), // 지도의 중심좌표
   level: 3 // 지도의 확대 레벨
 };
