@@ -15,5 +15,6 @@ Subscribe 바튼 클릭 시 고양이 모달 렌더링
 <hr>
 1. header태그 내 a태그 링크 스타일제거 미적용
 ---> (반영) a태그 text-decoration: none , color 검정 스타일적용
+
 2.Git 배포페이지에 카카오api 렌더링 미구현
 ---> (수정) kakao developers내 Web-사이트도메인에 기존 로컬포트에서 Git 페이지 링크 추가 적용
