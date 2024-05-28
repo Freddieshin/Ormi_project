@@ -29,6 +29,8 @@
   }
   li{
     display: flex;
+    font-size: 16px;
+    color: #0000;
     font-family: Arial;
     margin-top: 41px;
     margin-right: 30px;
@@ -93,7 +95,8 @@
   }
   .catcontainer1{
     display: flex;
-    justify-content: center;
+   align-items: center;
+    margin-left: 320px;
     gap: 72px;
   }
   .cat1 img{
@@ -103,7 +106,8 @@
   }
   .catcontainer2{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin-left: 320px;
     gap: 72px;
   }
   .cat2 img {
@@ -112,6 +116,7 @@
   }
 .moretext{
   text-align: center;
+  margin-top: 100px;
 }
   .hodutext{
     font-size: 24px;
@@ -229,7 +234,7 @@
     display: none;
     position: absolute;
     top: 3400px;
-    left: 692px;
+    left: 1000px;
     z-index: 4;
   }
   .modalbackground{
@@ -353,6 +358,7 @@
     </section>
 </main>
 
+<section>
   <!-- 카카오맵 api구현 -->
   <p class="maptext">Where you'll be</p>
   <p class="adress">78, Digital-ro 10-gil, Geumcheon-gu, Seoul, Republic of Korea</p>
@@ -367,8 +373,6 @@
     var map = new kakao.maps.Map(mapContainer, mapOption);
   </script>
 
-<!-- 섹션 시작 -->
-<section>
   <div class="subscribe">
     <div class="subtextcontainer">
       <p class="subtext">
@@ -385,6 +389,7 @@
       <button id="openmodal" class="button4">Subscribe</button>
     </div>
   </div>
+  </section>
 
   <!-- 모달 열기 -->
 <script>
