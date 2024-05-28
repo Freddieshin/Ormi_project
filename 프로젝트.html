@@ -4,11 +4,282 @@
   <meta charset="UTF-8">
   <title>개인프로젝트 만들기</title>
 </head>
-<body></body>
+<style>
+  * {
+    border: 0;
+    margin: 0;
+  }
+  header{
+    height: 900px;
+    background-color:  #F2E9D8;
+  }
+  nav{
+    display: flex;
+    flex-direction: row;
+  }
+  .logo{
+    margin-top: 30px;
+    margin-bottom: 231px;
+    margin-left: 320px;
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+    margin-left: 736px;
+  }
+  li{
+    display: flex;
+    font-size: 16px;
+    color: #0000;
+    font-family: Arial;
+    margin-top: 41px;
+    margin-right: 30px;
+  }
+  button{
+    font-weight: 700;
+    background-color: #D97652;
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    align-content: center;
+  }
+  .button1{
+    width: 140px;
+    height: 50px;
+    margin-top: 26px;
+    margin-left: 49px;
+  }
+  h1{
+    font-size: 48px;
+    margin-left: 170px;
+    margin-bottom: 40px;
+    margin-left: 320px;
+  }
+  .toptext{
+    font-size: 16px;
+    margin-right: 445px;
+    margin-bottom: 40px;
+    margin-left: 320px;
+  }
+  .button2{
+    width: 140px;
+    height: 50px;
+    margin-left: 320px;
+  }
+  .boxcat{
+    position: absolute;
+    top: 134px;
+    left: 1185px;
+  }
+  .maincat{
+    float: left;
+    border-radius: 30px;
+    margin-top: -80px;
+    margin-right: 110px;
+    margin-left: 320px;
+  }
+  .maintext{
+    font-size: 36px;
+    margin-top: 172px;
+    margin-bottom: 30px;
+  }
+  h2{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 172px;
+    margin-bottom: 40px;
+  }
+  .centertext{
+    text-align: center;
+    margin-bottom: 88px;
+  }
+  .catcontainer1{
+    display: flex;
+    align-items: center;
+    margin-left: 320px;
+    gap: 72px;
+  }
+  .cat1 img{
+    border-radius: 30px;
+    margin-bottom: 72px;
+
+  }
+  .catcontainer2{
+    display: flex;
+    align-items: center;
+    margin-left: 320px;
+    gap: 72px;
+  }
+  .cat2 img {
+    border-radius: 30px;
+    margin-bottom: 100px;
+  }
+  .moretext{
+    text-align: center;
+  }
+  .hodutext{
+    font-size: 24px;
+  }
+  .button3{
+    width: 140px;
+    height: 50px;
+    margin-top: 28px;
+    margin-bottom: 80px;
+  }
+  .catcontainer3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 72px;
+  }
+  .moreimg{
+    border-radius: 40px;
+    width: 378px;
+    height: 378px;
+    margin-bottom: 80px;
+  }
+  hr{
+    border: 1px solid;
+    color: #C4C4C4;
+    width: 1278px;
+    margin-left: 320px;
+  }
+  .maptext{
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 68px;
+    margin-bottom: 20px;
+    margin-left: 320px;
+  }
+  .adress{
+    margin-left: 320px;
+    margin-bottom: 48px;
+  }
+  #map{
+    border-radius: 12px;
+    margin-left: 320px;
+  }
+  .subscribe{
+    background-color: #263140;
+    width: 1280px;
+    height: 200px;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 320px;
+    z-index: 3;
+
+  }
+  .subtextcontainer{
+    display: inline-block;
+    padding-left: 58px;
+  }
+  .subtext{
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .lorentext{
+    color: #F2E9D8;
+    font-size: 14px;
+  }
+  .emailcontainer{
+    float: right;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border-radius: 60px;
+    width: 530px;
+    height: 60px;
+    color: #767676;
+    margin-top: 68px;
+    margin-right: 53px;
+  }
+  .mailicon{
+    margin-left: 28px;
+  }
+  .mailarea{
+    width: 184px;
+    height: 20px;
+    font-size: 16px;
+    padding-right: 30px;
+    padding-left: 18px;
+  }
+  .button4{
+    width: 135px;
+    height: 50px;
+    margin-left: 105px;
+  }
+  .backgroundcat{
+    z-index: 1;
+  }
+  .footercontanier{
+    display: flex;
+    text-align: center;
+  }
+  .footerlogo{
+    width: 226px;
+    height: 70px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 320px;
+  }
+  .logoimg{
+    margin-top: 13px;
+  }
+  .modal{
+    display: none;
+    position: absolute;
+    top: 3300px;
+    left: 1000px;
+    z-index: 4;
+  }
+  .modalbackground{
+    border-radius: 30px;
+    z-index: 1;
+  }
+  .modalcat{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 60px;
+    margin-left: 245px;
+    z-index: 3;
+  }
+  .modaltext{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding-top: 196px;
+    margin-left: 108px;
+  }
+  .modaltext1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #D97652;
+  }
+  .modaltext2{
+    font-size: 14px;
+    margin-top: 14px;
+  }
+  .button5{
+    width: 183px;
+    height: 50px;
+    margin-top: 38px
+  }
+</style>
+<body>
+
 <!-- 헤더 시작 -->
 <header>
   <nav>
-      <img class="logo" src="./img/Logo-fin.png" alt="호두로고" width="130" height="40">
+    <div class="logo">
+      <img src="./img/Logo-fin.png" alt="호두로고" width="130" height="40">
+    </div>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
@@ -29,39 +300,78 @@
 <!-- 메인 시작  -->
 <main>
   <section>
-  <img src="./img/maincat.png" class="maincat" alt="누워있는냥이" width="660" height="390">
-  <p class="maintext"><strong>Lorem Ipsum is simply <br> dummy text of the printing <br> and dummy text</strong></p>
-  <p>Lorem ipsum simply dummy text of the printing and typesetting <br> industry.</p>
-  <h2><strong style="color: #D97652">dummy text of the printing and dummy</strong></h2>
-  <p class="centertext">Lorem ipsum simply <strong style="color: #D97652">dummy text</strong> of the printing and typesetting industry. <br>
-    Lorem Ipsum has been the industry's standard dummy textever since the 1500s, when an unknown</p>
+    <img src="./img/maincat.png" class="maincat" alt="누워있는냥이" width="660" height="390">
+    <p class="maintext"><strong>Lorem Ipsum is simply <br> dummy text of the printing <br> and dummy text</strong></p>
+    <p>Lorem ipsum simply dummy text of the printing and typesetting <br> industry.</p>
+    <h2><strong style="color: #D97652">dummy text of the printing and dummy</strong></h2>
+    <p class="centertext">Lorem ipsum simply <strong style="color: #D97652">dummy text</strong> of the printing and typesetting industry. <br>
+      Lorem Ipsum has been the industry's standard dummy textever since the 1500s, when an unknown</p>
   </section>
-<section>
-  <div class="catcontainer1">
-    <div class="cat1"><img class=catimg1 src="./img/subcat1.png" alt="메인고양이1"></div>
-    <div class="cat1"><img src="./img/subcat2.png" alt="메인고양이2"></div>
-    <div class="cat1"><img src="./img/subcat3.png" alt="메인고양이3"></div>
-  </div>
-  <div class="catcontainer2">
-    <div class="cat2"><img class=catimg2 src="./img/subcat4.png" alt="메인고양이4"></div>
-    <div class="cat2"><img class=catimg2 src="./img/subcat5.png" alt="메인고양이5"></div>
-    <div class="cat2"><img class=catimg2 src="./img/subcat6.png" alt="메인고양이6"></div>
-  </div>
-  <div class="moretext">
-    <p class="hodutext"><strong>Continue exploring HODU</strong></p>
-    <button class="button3">Show more</button>
-  </div>
+  <section>
+    <div class="catcontainer1">
+      <div class="cat1"><img class=catimg1 src="./img/subcat1.png" alt="메인고양이1"></div>
+      <div class="cat1"><img src="./img/subcat2.png" alt="메인고양이2"></div>
+      <div class="cat1"><img src="./img/subcat3.png" alt="메인고양이3"></div>
+    </div>
+    <div class="catcontainer2">
+      <div class="cat2"><img class=catimg2 src="./img/subcat4.png" alt="메인고양이4"></div>
+      <div class="cat2"><img class=catimg2 src="./img/subcat5.png" alt="메인고양이5"></div>
+      <div class="cat2"><img class=catimg2 src="./img/subcat6.png" alt="메인고양이6"></div>
+    </div>
+    <div class="moretext">
+      <p class="hodutext"><strong>Continue exploring HODU</strong></p>
+      <button class="button3">Show more</button>
+    </div>
     <div class="catcontainer3">
-  </div>
-  <hr>
+    </div>
 
-    </section>
+    <script>
+      const listPic = document.querySelector('.catcontainer3');
+      const btn = document.querySelector('.button3');
+      let pageToPatch = 1;
+
+      btn.addEventListener('click', ()=>{fetchImages(pageToPatch += 1)});
+
+      async function fetchImages(page){
+        try{
+          const response = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=3`);
+          if (!response.ok) {
+            throw new Error('네트워크 응답에 문제가 있습니다.');
+          }
+
+          const datas = await response.json();
+          makeImageList(datas);
+
+        } catch (error) {
+          console.error('데이터를 가져오는데 문제가 발생했습니다 :', error);
+        }
+      }
+
+      function makeImageList(datas){
+        datas.forEach((data)=>{
+          listPic.insertAdjacentHTML('beforeend', `<img class="moreimg" src="${data.download_url}" alt="추가고양이">`);
+        });
+      }
+    </script>
+    <hr>
+
+  </section>
+</main>
+
 <section>
-
   <!-- 카카오맵 api구현 -->
   <p class="maptext">Where you'll be</p>
   <p class="adress">78, Digital-ro 10-gil, Geumcheon-gu, Seoul, Republic of Korea</p>
   <div id="map" style="width:1278px; height:520px;"></div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8ccd9c3f2c7564d10cde92b8dbd1884a"></script>
+  <script>
+    var mapContainer = document.getElementById('map'),
+            mapOption = {
+              center: new kakao.maps.LatLng(37.4745063, 126.8897151),
+              level: 3
+            };
+    var map = new kakao.maps.Map(mapContainer, mapOption);
+  </script>
 
   <div class="subscribe">
     <div class="subtextcontainer">
@@ -79,9 +389,13 @@
       <button id="openmodal" class="button4">Subscribe</button>
     </div>
   </div>
-  </section>
-</main>
-  <img class="backgroundcat" src="./img/backgroundcat.png" alt="백그라운드냥이">
+</section>
+
+<!-- 모달 열기 -->
+<script>
+  document.querySelector("#openmodal").addEventListener("click", function (){document.querySelector(".modal").style.display = 'flex'})
+</script>
+<img class="backgroundcat" src="./img/backgroundcat.png" alt="백그라운드냥이">
 </section>
 
 <!-- 푸터 시작 -->
@@ -99,17 +413,22 @@
       <!-- 모달구현 -->
       <div class="modal">
         <div class="modalimg">
-        <img class="modalcat" src="./img/modalcat.png" alt="모달냥이">
+          <img class="modalcat" src="./img/modalcat.png" alt="모달냥이">
           <img class="modalbackground" src="./img/modalbackground.png" alt="모달배경">
-      </div>
+        </div>
         <div class="modaltext">
-        <p class="modaltext1">Thank you!</p>
-        <p class="modaltext2">Lorem Ipsum is simply dummy text of the printing industry. </p>
-        <button id="close" class="button5">OK! I Love HODU</button>
+          <p class="modaltext1">Thank you!</p>
+          <p class="modaltext2">Lorem Ipsum is simply dummy text of the printing industry. </p>
+          <button id="close" class="button5">OK! I Love HODU</button>
         </div>
       </div>
     </div>
-    </div>
+  </div>
 </footer>
+
+<!-- 모달 닫기 -->
+<script>
+  document.querySelector("#close").addEventListener("click", function (){document.querySelector(".modal").style.display = 'none'})
+</script>
 </body>
 </html>
