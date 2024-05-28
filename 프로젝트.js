@@ -21,16 +21,18 @@ async function fetchImages(page){
 }
 function makeImageList(datas){
   datas.forEach((data)=>{
-    listPic.insertAdjacentHTML('beforeend', `<li class="moreimg"><img src="${data.download_url}" alt="추가고양이"></li>`);
+    listPic.insertAdjacentHTML('beforeend', `<img class="moreimg" src="${data.download_url}" alt="추가고양이">`);
   });
 }
 <!-- 카카오맵 api구현 -->
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8ccd9c3f2c7564d10cde92b8dbd1884a"></script>
-  var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+
+  var mapContainer = document.getElementById('map'),
   mapOption = {
-  center: new kakao.maps.LatLng(37.4745063, 126.8897151), // 지도의 중심좌표
-  level: 3 // 지도의 확대 레벨
+  center: new kakao.maps.LatLng(37.4745063, 126.8897151),
+  level: 3
 };
+  var map = new kakao.maps.Map(mapContainer, mapOption);
   // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
   var map = new kakao.maps.Map(mapContainer, mapOption);
 <!-- 모달구현 -->
